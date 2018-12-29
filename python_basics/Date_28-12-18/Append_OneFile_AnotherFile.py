@@ -1,0 +1,6 @@
+f=open("file3.txt","r")
+data=f.read()
+f1=open("file4.txt","w")
+f1.write(data)
+f1.close()
+f.close()
