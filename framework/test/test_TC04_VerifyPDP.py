@@ -18,12 +18,13 @@ class Test_login(unittest.TestCase):
 
     @pytest.mark.run(order=1)
     def test_HomePage(self):
-        self.hp.goToHp()
+        self.hp.mouseHover()
 
     @pytest.mark.run(order=2)
     def test_ProductListPage(self):
-        self.plp.goToPLP()
+        self.plp.sel_Prod()
 
     @pytest.mark.run(order=3)
     def test_ProductDisplayPage(self):
         self.pdp.type()
+
